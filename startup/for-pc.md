@@ -7,6 +7,7 @@
 - [ ] [Eclipse 插件安装](https://github.com/orgs/WiseCRM/teams/wisecrm/discussions/3)
 - [ ] Tomcat 8.0+
 - [ ] Maven 3.5+
+- [ ] Nodejs
 - [ ] GitHub Desktop
 
 ## 导入项目
