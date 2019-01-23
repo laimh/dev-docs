@@ -1,14 +1,13 @@
 ## 系统环境要求
 
-> 如无特殊说明，以下软件均可使用最新版本
+> 如无特殊说明，以下软件建议使用最新版本
 
-- [ ] [JDK 1.8](https://www.oracle.com/technetwork/java/javase/downloads/index.html)
-- [ ] [Eclipse for Enterprise Java Developers](https://www.eclipse.org/downloads/packages/) 
-- [ ] Eclipse 插件（通过 Eclipse Marketplace 直接搜索安装）
-  - [ ] JRebel
-- [ ] [Tomcat](https://tomcat.apache.org/index.html)
-- [ ] [Maven](http://maven.apache.org/download.cgi)
-- [ ] [GitHub Desktop](https://desktop.github.com/)
+- [ ] JDK 1.8
+- [ ] Eclipse for Enterprise Java Developers
+- [ ] [Eclipse 插件安装](https://github.com/orgs/WiseCRM/teams/wisecrm/discussions/3)
+- [ ] Tomcat 8.0+
+- [ ] Maven 3.5+
+- [ ] GitHub Desktop
 
 ## 导入项目
 
