@@ -15,6 +15,8 @@
 
 ### 导入项目
 
+> 如有多个 GitHub 账号可参考 [多账号配置](https://github.com/WiseCRM/dev-docs/blob/master/startup/multi-account.md)
+
 1. 通过 `git clone` 或 GitHub Desktop 签出代码
 2. 用 Eclipse 导入为 Maven 工程
 3. 然后将 `.eclipse/` 内的文件复制到项目目录下
