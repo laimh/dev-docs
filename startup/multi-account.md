@@ -42,5 +42,10 @@ PreferredAuthentications publickey
 User wisecrmgh
 ```
 
-### 签入/签出
-通过 GitHub Desktop
+### 签出 git clone
+以 [CRCS](https://github.com/WiseCRM/365crcs) 为例，此项目的一般签出地址为 `git@github.com:WiseCRM/365crcs.git`，需要将 `github.com` 部分修改为上一步中设置的 Host 参数，即 `devezhao.com` 或 `wisecrmgh.com`（取决于你使用哪个账号）。
+
+- 打开 GitHub Desktop
+- 在菜单中选择 File -> Clone repository ...
+- 在打开的窗口中切换页签至 URL
+- 输入 git 签出地址即可
