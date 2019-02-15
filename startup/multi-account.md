@@ -49,3 +49,12 @@ User wisecrmgh
 - 在菜单中选择 File -> Clone repository ...
 - 在打开的窗口中切换页签至 URL
 - 输入 git 签出地址即可
+
+### 更进一步
+在提交代码时，由于配置了多个账号，Git/GitHub Desktop 也许并不知道你使用的是哪个账号，此时可以修改项目目录下 `.git/config` 文件，明确指定此项目使用哪个账号。
+很简单，打开此文件并添加以下配置（其中 `name` 推荐填写你的用户名，但实际上包括 `email` 你都可以任意填写）
+```
+[user]
+	name = wisecrmgh
+	email = zhaoff@wisecrm.com
+```
