@@ -42,3 +42,5 @@ PreferredAuthentications publickey
 User wisecrmgh
 ```
 
+### 签入/签出
+通过 GitHub Desktop
