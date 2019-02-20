@@ -6,9 +6,12 @@
 
 - [ ] JDK 1.8
 - [ ] Eclipse for Enterprise Java Developers
-- [ ] [Eclipse 插件安装](https://github.com/orgs/WiseCRM/teams/wisecrm/discussions/3)
+  - SpotBugs
+  - [JRebel](https://github.com/orgs/WiseCRM/teams/wisecrm/discussions/3)
 - [ ] VSCode
-- [ ] Tomcat 8.0+
+  - ESLint
+  - VS Live Share
+- [ ] Tomcat 7.0/8.5
 - [ ] Maven 3.5+
 - [ ] GitHub Desktop
 - [ ] Nodejs（建议安装）
