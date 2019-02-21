@@ -9,12 +9,12 @@
   - SpotBugs
   - [JRebel](https://github.com/orgs/WiseCRM/teams/wisecrm/discussions/3)
 - [ ] VSCode
-  - ESLint(需通过node的npm命令执行npm install -g eslint)
+  - ESLint（此插件依赖 NodeJS，通过 npm 命令执行 `npm install -g eslint`）
   - VS Live Share
 - [ ] Tomcat 7.0/8.5
 - [ ] Maven 3.5+
 - [ ] GitHub Desktop
-- [ ] Nodejs（建议安装）
+- [ ] NodeJS
 
 ### 导入项目
 
