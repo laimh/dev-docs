@@ -2,7 +2,7 @@
 
 ### 系统环境要求
 
-> 如无特殊说明，以下软件建议使用最新版本
+> 如无特殊说明，以下软件建议使用最新版本。其中 JDK/Maven/NodeJS 强烈建议加入环境变量，以便使用相关命令行
 
 - [ ] JDK 1.8
 - [ ] Eclipse for Enterprise Java Developers
@@ -13,13 +13,13 @@
   - VS Live Share
 - [ ] Tomcat 7.0/8.5
 - [ ] Maven 3.5+
-- [ ] GitHub Desktop
 - [ ] NodeJS
+- [ ] GitHub Desktop
 
 ### 导入项目
 
 > 如有多个 GitHub 账号可参考 [多账号配置](https://github.com/WiseCRM/dev-docs/blob/master/startup/multi-account.md)
 
 1. 通过 `git clone` 或 GitHub Desktop 签出代码
-2. 用 Eclipse 导入为 Maven 工程
-3. 然后将 `.eclipse/` 内的文件复制到项目目录下
+2. 然后将 `.eclipse/` 文件夹内的文件复制到项目目录
+3. 用 Eclipse 导入为 Maven 工程
