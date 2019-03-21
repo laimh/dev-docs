@@ -81,7 +81,7 @@
 </tbody>
 </table>
 
-## 更新或新增下拉列表数据
+## 更新或新增下拉列表数据 <small>4.6</small>
 
 - API 地址：`metadata/picklist/edit`
 - HTTP 方法：POST
@@ -167,7 +167,7 @@
 </tbody>
 </table>
 
-## 移除下拉列表数据
+## 移除下拉列表数据 <small>4.6</small>
 
 - API 地址：`metadata/picklist/remove`
 - HTTP 方法：POST
