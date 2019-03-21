@@ -66,17 +66,17 @@
   <tr>
 		<td>values</td>
 		<td>array</td>
-		<td>picklis 值列表</td>
+		<td>picklist 值列表</td>
 	</tr>
   <tr>
 		<td>values/value</td>
 		<td>int</td>
-		<td>picklis 值</td>
+		<td>picklist 值</td>
 	</tr>
   <tr>
 		<td>values/label</td>
 		<td>string</td>
-		<td>picklis 值显示名称</td>
+		<td>picklist 值显示名称</td>
 	</tr>
 </tbody>
 </table>
@@ -114,13 +114,13 @@
 		<td>value</td>
 		<td>int</td>
 		<td>否</td>
-		<td>picklis 值。用于匹配已有 picklist 值，匹配到则更新，未填（或未匹配到）则新增</td>
+		<td>picklist 值。用于匹配已有 picklist 值，匹配到则更新，未填（或未匹配到）则新增</td>
 	</tr>
   <tr>
 		<td>label</td>
 		<td>string</td>
 		<td>是</td>
-		<td>picklis 值显示名称。注意显示名称不能重复，若存在重复系统会返回错误</td>
+		<td>picklist 值显示名称。注意显示名称不能重复，若存在重复系统会返回错误</td>
 	</tr>
 </tbody>
 </table>
@@ -132,10 +132,10 @@
   "error_code": 0,
   "error_msg": "调用成功",
   "data": {
-		"field": "typeCode",
-		"value": 2,
-		"label": "正式客户"
-	}
+    "field": "typeCode",
+    "value": 2,
+    "label": "正式客户"
+  }
 }
 </pre>
 
@@ -157,12 +157,12 @@
 	<tr>
 		<td>value</td>
 		<td>int</td>
-		<td>picklis 值</td>
+		<td>picklist 值</td>
 	</tr>
   <tr>
 		<td>label</td>
 		<td>string</td>
-		<td>picklis 值显示名称</td>
+		<td>picklist 值显示名称</td>
 	</tr>
 </tbody>
 </table>
@@ -200,13 +200,13 @@
 		<td>value</td>
 		<td>int</td>
 		<td>否</td>
-		<td>picklis 值</td>
+		<td>picklist 值</td>
 	</tr>
   <tr>
 		<td>label</td>
 		<td>string</td>
 		<td>否</td>
-		<td>picklis 值显示名称。`value` 或 `label` 必须指定一个，用于匹配待移除项</td>
+		<td>picklist 值显示名称。`value` 或 `label` 必须指定一个，用于匹配待移除项</td>
 	</tr>
 </tbody>
 </table>
@@ -218,9 +218,9 @@
   "error_code": 0,
   "error_msg": "调用成功",
   "data": {
-		"field": "typeCode",
-		"value": 2
-	}
+    "field": "typeCode",
+    "value": 2
+  }
 }
 </pre>
 
@@ -242,7 +242,7 @@
 	<tr>
 		<td>value</td>
 		<td>int</td>
-		<td>被移除的 picklis 值</td>
+		<td>被移除的 picklist 值</td>
 	</tr>
 </tbody>
 </table>
