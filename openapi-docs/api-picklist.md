@@ -27,7 +27,7 @@
 		<td>fields</td>
 		<td>string</td>
 		<td>否</td>
-		<td>字段内部名称，不填写则返回实体的所有下拉列表字段值</td>
+		<td>字段内部名称，不填写则返回实体的所有下拉列表字段项</td>
 	</tr>
 </tbody>
 </table>
@@ -66,7 +66,7 @@
   <tr>
 		<td>values</td>
 		<td>array</td>
-		<td>picklist 值列表</td>
+		<td>picklist 列表</td>
 	</tr>
   <tr>
 		<td>values/value</td>
@@ -81,7 +81,7 @@
 </tbody>
 </table>
 
-## 更新或新增下拉列表数据 <small>4.6</small>
+## 更新或新增下拉列表项 <small>4.6</small>
 
 - API 地址：`metadata/picklist/edit`
 - HTTP 方法：POST
@@ -114,7 +114,7 @@
 		<td>value</td>
 		<td>int</td>
 		<td>否</td>
-		<td>picklist 值。用于匹配已有 picklist 值，匹配到则更新，未填（或未匹配到）则新增</td>
+		<td>picklist 值。用于匹配已有 picklist 项，匹配到则更新，未填（或未匹配到）则新增</td>
 	</tr>
   <tr>
 		<td>label</td>
@@ -167,7 +167,7 @@
 </tbody>
 </table>
 
-## 移除下拉列表数据 <small>4.6</small>
+## 移除下拉列表项 <small>4.6</small>
 
 - API 地址：`metadata/picklist/remove`
 - HTTP 方法：POST
@@ -242,7 +242,7 @@
 	<tr>
 		<td>value</td>
 		<td>int</td>
-		<td>被移除的 picklist 值</td>
+		<td>被移除的 picklist 项，如未匹配到任何，则返回 `-1`</td>
 	</tr>
 </tbody>
 </table>
