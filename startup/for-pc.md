@@ -6,11 +6,11 @@
 
 - [ ] JDK 1.8
 - [ ] Eclipse for Enterprise Java Developers
-  - SpotBugs
+  - SpotBugs （非必须）
   - [JRebel](https://github.com/orgs/WiseCRM/teams/wisecrm/discussions/3)
 - [ ] VSCode
   - ESLint（此插件依赖 NodeJS，通过 npm 命令执行 `npm install -g eslint`）
-  - VS Live Share
+  - VS Live Share （非必须）
 - [ ] Tomcat 7.0/8.5
 - [ ] Maven 3.5+
 - [ ] NodeJS
