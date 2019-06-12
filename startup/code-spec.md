@@ -4,7 +4,7 @@
 
 - 一个问题要分 1-N 次 提交（commit），不要将多个问题 1 次提交
 - 提交的代码如果存在相应的 JIRA 问题，提交时要带上完整的问题号（如 GTH-6090）
-- 参考 GitHub Flow 开发模式，即不能提交代码到主干，全部在分支上开发（分支以问题为单位），完成后 PR（Pull Request）到主分支（更多说明请参见下文的 *分支规范*）
+- 整体参考 GitHubFlow/GiblabFlow 开发模式，即不提交代码到主干（主分支），全部在日常开发分支上开发（分支以问题为单位），完成后 PR（更多说明请参见下文的 *分支规范*）
 - 单次 PR 的代码不要过多（过多代码会给 CR（Code Reviews） 带来不便），但要保证是一个完整的功能
 
 
@@ -22,3 +22,8 @@
   - 以上 `#` 部分为 JIRA 问题号，或问题描述（建议全小写英文，单词间用 `-` 分割）
   - 日常开发分支由开发人员自行创建，完成后可 PR 至多个主分支
 - 本规范参考 https://github.com/arslanbilal/git-cheat-sheet/blob/master/other-sheets/git-cheat-sheet-zh.md 推荐阅读
+
+## PR 规范
+- 线上 BUG PR 至 `master`
+- 当前开发版本需求 PR 至 `develop`
+- 管理员会定期/适时将 `master` 更新至 `develop`，以便影响新版本开发
