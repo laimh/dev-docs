@@ -24,7 +24,7 @@
 - 本规范参考 https://github.com/arslanbilal/git-cheat-sheet/blob/master/other-sheets/git-cheat-sheet-zh.md 推荐阅读
 
 ## PR 规范
-- 线上 BUG PR 至 `master`
-- 当前开发版本需求 PR 至 `develop`
-- 管理员会定期/适时将 `master` 更新至 `develop`，以便影响新版本开发
+- 需要当前版本修复的线上 BUG PR 至 `master`
+- 其他的，活当前开发版本需求 PR 至 `develop`
+- 管理员会定期/适时将 `master` 更新至 `develop`，以免影响新版本开发
 - 要 PR 至那个主分支，就从哪个主分支做开发分支
