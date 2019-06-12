@@ -18,13 +18,14 @@
   - 以上分支除 `customized/#-*` 外均需走 PR 流程，无法直接提交
 - 日常开发分支
   - `feature-#` 或 `feat-#` 新功能、改进等除 BUG 以外的
-  - `bugfix-#` 或 `bug-#` BUG 修复
+  - `bugfix-#` BUG 修复
+  - `hotfix-#` BUG 热修复，与 `bugfix` 的差别是此分支会 PR 到主分支，并会尽快线上更新
   - 以上 `#` 部分为 JIRA 问题号，或问题描述（建议全小写英文，单词间用 `-` 分割）
   - 日常开发分支由开发人员自行创建，完成后可 PR 至多个主分支
 - 本规范参考 https://github.com/arslanbilal/git-cheat-sheet/blob/master/other-sheets/git-cheat-sheet-zh.md 推荐阅读
 
 ## PR 规范
 - 需要当前版本修复的线上 BUG PR 至 `master`
-- 其他的，或当前开发版本需求 PR 至 `develop`
+- 其他不需要紧急修复的 BUG 或当前开发版本需求 PR 至 `develop`
 - 管理员会定期/适时将 `master` 更新至 `develop`，以免影响新版本开发
-- 要 PR 至那个主分支，就从哪个主分支做开发分支
+- 要 PR 至哪个主分支，就从哪个主分支做开发分支
