@@ -83,7 +83,7 @@
 
 ## 更新或新增下拉列表项 <small>4.6</small>
 
-- API 地址：`metadata/picklist/edit`
+- API 地址：`metadata/picklist-edit`
 - HTTP 方法：POST
 - 授权方式：[通用授权](auth-intro.html)
 
@@ -169,7 +169,7 @@
 
 ## 移除下拉列表项 <small>4.6</small>
 
-- API 地址：`metadata/picklist/remove`
+- API 地址：`metadata/picklist-remove`
 - HTTP 方法：POST
 - 授权方式：[通用授权](auth-intro.html)
 
