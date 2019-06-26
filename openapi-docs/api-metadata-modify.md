@@ -33,7 +33,7 @@
 		<td>POST流</td>
 		<td>json(map)</td>
 		<td>是</td>
-		<td>要修改的属性，例如 `{ description: '描述'}`，详情见下表：支持修改的字段属性</td>
+		<td>要修改的属性，例如 <code>{ description: '描述'}</code>，详情见下表：支持修改的字段属性</td>
 	</tr>
 </tbody>
 </table>
