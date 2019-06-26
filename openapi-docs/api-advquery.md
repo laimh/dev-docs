@@ -38,8 +38,8 @@
 	<tr>
 		<td>sort</td>
 		<td>string</td>
-		<td>是</td>
-		<td>排序，格式为 `fieldName[:asc|desc]`，支持多个字段排序，多个字段以逗号（,）分隔 <small>4.6</small></td>
+		<td>否</td>
+		<td>排序，格式为 `fieldName[:asc|desc]`，支持多个字段排序，多个字段以逗号（,）分隔。<small>4.6</small></td>
 	</tr>
 	<tr>
 		<td>page_no</td>
