@@ -101,7 +101,7 @@ Tomcat 使用 8.5 版本，直接解压使用（提供的 Tomcat 已做优化，
 > echo "0 4 * * * root (python /data/mysql_backups/backupdb.py)" >> /etc/crontab
 
 ```
-4. 也可以手动执行
+4. 也可以手动执行备份
 ```
 > python /data/mysql_backups/backupdb.py
 ```
