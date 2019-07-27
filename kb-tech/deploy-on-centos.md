@@ -5,9 +5,9 @@
 * [安装操作系统](#安装操作系统)
 * 安装辅助软件
   * [MySQL](#安装-mysql)
-  * SSDB
-  * JDK
-  * Apache Tomcat
+  * [SSDB](#安装-ssdb)
+  * [JDK](#安装-jdk)
+  * [Tomcat](#安装-tomcat)
   
 ### 安装操作系统
 安装步骤略。
