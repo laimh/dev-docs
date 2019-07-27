@@ -8,6 +8,8 @@
   * [SSDB](#安装-ssdb)
   * [JDK](#安装-jdk)
   * [Tomcat](#安装-tomcat)
+* 部署 WiseCRM365
+* 自动备份
   
 ### 安装操作系统
 安装步骤略。
@@ -55,9 +57,9 @@ SSDB 使用最新版本，需要通过编译安装。
 
 ### 安装 JDK
 JDK 使用 1.8 或以上版本，通过 rpm 安装。
-1. 下载安装文件 [jdk-8u201-linux-x64.rpm](https://wbs-qncdn.wisecrm.cn/uploader/20190727/88412717075896161.repo?attname=jdk-8u201-linux-x64.rpm)
+1. 下载安装文件 [jdk-8u201-linux-x64.rpm](https://wbs-qncdn.qidapp.cn/uploader/20190727/jdk-8u201-linux-x64.rpm?attname=jdk-8u201-linux-x64.rpm)
 ```
-> wget https://wbs-qncdn.wisecrm.cn/uploader/20190727/88412717075896161.repo?attname=jdk-8u201-linux-x64.rpm
+> wget https://wbs-qncdn.qidapp.cn/uploader/20190727/jdk-8u201-linux-x64.rpm?attname=jdk-8u201-linux-x64.rpm
 ```
 2. 安装
 ```
@@ -65,13 +67,23 @@ JDK 使用 1.8 或以上版本，通过 rpm 安装。
 ```
 
 ### 安装 Tomcat
-Tomcat 为直接解压使用
-1. 下载安装文件 [apache-tomcat-8.5.37.tar.gz](https://wbs-qncdn.wisecrm.cn/uploader/20190727/88416585798811703.gz?attname=apache-tomcat-8.5.37.tar.gz)
+Tomcat 使用 8.5 版本，可直接解压使用。
+1. 下载安装文件 [tomcat18080](https://wbs-qncdn.wisecrm.cn/uploader/20190727/88417740827431550.zip?attname=tomcat18080)
 ```
-> wget https://wbs-qncdn.wisecrm.cn/uploader/20190727/88416585798811703.gz?attname=apache-tomcat-8.5.37.tar.gz
+> wget https://wbs-qncdn.wisecrm.cn/uploader/20190727/88417740827431550.zip?attname=tomcat18080
 ```
 2. 解压后即可使用
 ```
-> tar zxvf 
+> unzip tomcat18080.zip 
 ```
 
+### 部署
+1. 进入 WiseCRM365 发行列表选择需要的版本下载 https://www.365.wisecrm.com/pub/server/releases
+2. 将下载后的发行包解压，将解压后的 ROOT.war 复制到 Tomcat 的 webapps 目录
+3. 启动
+```
+> $TOMCAT$/bin/startup.sh
+```
+
+### 设置自动备份
+TODO
