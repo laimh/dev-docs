@@ -8,8 +8,8 @@
   * [SSDB](#安装-ssdb)
   * [JDK](#安装-jdk)
   * [Tomcat](#安装-tomcat)
-* 部署 WiseCRM365
-* 自动备份
+* 部署(#部署-wisecrm365)
+* [自动备份](#自动备份)
   
 ### 安装操作系统
 安装步骤略。
@@ -77,7 +77,7 @@ Tomcat 使用 8.5 版本，可直接解压使用。
 > unzip tomcat18080.zip 
 ```
 
-### 部署
+### 部署 WiseCRM365
 1. 进入 WiseCRM365 发行列表选择需要的版本下载 https://www.365.wisecrm.com/pub/server/releases
 2. 将下载后的发行包解压，将解压后的 ROOT.war 复制到 Tomcat 的 webapps 目录
 3. 启动
@@ -85,5 +85,5 @@ Tomcat 使用 8.5 版本，可直接解压使用。
 > $TOMCAT$/bin/startup.sh
 ```
 
-### 设置自动备份
+### 自动备份
 TODO
