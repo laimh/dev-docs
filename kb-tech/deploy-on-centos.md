@@ -8,7 +8,7 @@
   * [SSDB](#安装-ssdb)
   * [JDK](#安装-jdk)
   * [Tomcat](#安装-tomcat)
-* 部署(#部署-wisecrm365)
+* [部署](#部署-wisecrm365)
 * [自动备份](#自动备份)
   
 ### 安装操作系统
@@ -25,7 +25,7 @@ MySQL 使用 5.6 版本，可直接使用 yum 源安装。
 ```
 yum -y install mysql mysql-server
 ```
-3. 安装完成后启动并使用 `mysql -uroot` 登录 MySQL，为 root 开启远程访问，步骤如下
+3. 安装完成后启动并使用 `mysql -uroot` 登录 MySQL，为 root 开启远程访问权限，步骤如下
 ```
 > service mysqld start
 > mysql -uroot
@@ -67,18 +67,18 @@ JDK 使用 1.8 或以上版本，通过 rpm 安装。
 ```
 
 ### 安装 Tomcat
-Tomcat 使用 8.5 版本，可直接解压使用。
+Tomcat 使用 8.5 版本，直接解压使用（提供的 Tomcat 已做优化，端口为 `18080`）。
 1. 下载安装文件 [tomcat18080](https://wbs-qncdn.wisecrm.cn/uploader/20190727/88417740827431550.zip?attname=tomcat18080)
 ```
 > wget https://wbs-qncdn.wisecrm.cn/uploader/20190727/88417740827431550.zip?attname=tomcat18080
 ```
-2. 解压后即可使用
+2. 解压即可
 ```
 > unzip tomcat18080.zip 
 ```
 
 ### 部署 WiseCRM365
-1. 进入 WiseCRM365 发行列表选择需要的版本下载 https://www.365.wisecrm.com/pub/server/releases
+1. 进入 WiseCRM365 发行列表选择需要的版本下载 https://www.365.wisecrm.com/pub/server/releases ，或联系研发索取
 2. 将下载后的发行包解压，将解压后的 ROOT.war 复制到 Tomcat 的 webapps 目录
 3. 启动
 ```
@@ -86,4 +86,18 @@ Tomcat 使用 8.5 版本，可直接解压使用。
 ```
 
 ### 自动备份
-TODO
+自动备份是通过 py 脚本 + cron 任务来实现的。
+1. 下载 py 备份脚本
+```
+> wget https://wbs-qncdn.wisecrm.cn/uploader/20190727/88418877353254072.py?attname=backupdb.py
+```
+2. 现在后注意修改 `backupdb.py` 文件中的 `DB_USER` `DB_PASSWD` 参数，即 MySQL 用户名、密码，以及备份目录 `BACKUP_DIR`
+3. 设置 cron 定时备份，在 `/etc/crontab` 文件添加一行（请注意 py 脚本文件位置修改成自己的）
+```
+0  4  *  *  *  root  (python /data/mysql_backups/backupdb.py)
+
+```
+4. 也可以手动执行验证一下
+```
+> python /data/mysql_backups/backupdb.py
+```
