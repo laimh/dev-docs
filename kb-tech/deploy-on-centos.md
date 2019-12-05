@@ -82,7 +82,7 @@ unzip tomcat18080.zip
 ```
 
 ### 部署 WiseCRM365
-1. 进入 WiseCRM365 发行列表选择需要的版本下载 https://www.365.wisecrm.com/pub/server/releases ，或联系研发索取
+1. 进入 WiseCRM365 发行列表选择需要的版本下载，或联系研发索取
 2. 将下载后的发行包解压，将解压后的 ROOT.war 文件复制到 Tomcat 的 webapps 目录
 3. 启动
 ```
