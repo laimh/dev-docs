@@ -21,7 +21,7 @@ Enter same passphrase again:
 根据需要，你可以通过此命令生成多个 ssh-key，请注意如果文件名相同会覆盖。
 
 ### 将 ssh-key 设置到 GitHub 中
-进入 [SSH keys](https://github.com/settings/keys) 页面，点击 [New SSH key] 按钮把上一步生成的 key 添加到相应的 GitHub 账户中。
+进入 [SSH keys](https://github.com/settings/keys) 页面，点击 [New SSH key] 按钮把上一步生成的公钥（`.pub` 文件）内容添加到相应的 GitHub 账户中。
 
 具体步骤比较简单，这里不再复述。
 
