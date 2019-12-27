@@ -52,7 +52,7 @@ cd ssdb-master
 ```
 2. 编译安装
 ```
-yum -y install autoconf automake gcc gcc-c++
+yum -y install autoconf automake gcc gcc-c++ libtool
 make 
 ```
 3. 启动
