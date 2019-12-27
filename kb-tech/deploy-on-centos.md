@@ -42,6 +42,7 @@ $ flush privileges;
 
 ### 安装 SSDB
 SSDB 使用最新版本，需要通过编译安装。
+亦可参考官网安装教程：http://ssdb.io/docs/zh_cn/install.html
 
 1. 下载并解压
 ```
