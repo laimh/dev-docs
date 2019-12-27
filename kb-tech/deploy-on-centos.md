@@ -21,7 +21,7 @@ MySQL 使用 5.6 版本，可直接通过 yum 源安装。
 
 1. 下载 yum 源文件将其放置在 `/etc/yum.repos.d/` 目录
 ```
-wget /etc/yum.repos.d/ https://wbs-qncdn.wisecrm.cn/uploader/20190727/88412717075896161.repo?attname=mysql-community.repo
+wget -P /etc/yum.repos.d/ https://wbs-qncdn.wisecrm.cn/uploader/20191227/101629694753510368.repo?attname=mysql-community.repo
 ```
 2. 安装
 ```
@@ -51,7 +51,7 @@ cd ssdb-master
 ```
 2. 编译安装
 ```
-yum -y install autoconf gcc
+yum -y install autoconf gcc gcc-c++
 make 
 ```
 3. 启动
@@ -78,8 +78,10 @@ wget https://wbs-qncdn.wisecrm.cn/uploader/20190727/88417740827431550.zip?attnam
 ```
 2. 解压即可使用
 ```
+# yum -y install zip unzip
 unzip tomcat18080.zip 
 ```
+
 
 ### 部署 WiseCRM365
 1. 进入 WiseCRM365 发行列表选择需要的版本下载，或联系研发索取
