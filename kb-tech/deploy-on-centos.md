@@ -75,7 +75,7 @@ rpm -ivh jdk-8u201-linux-x64.rpm
 Tomcat 使用 8.5 版本，直接解压使用（提供的 Tomcat 已做优化，端口为 `18080`）。
 1. 下载安装文件
 ```
-wget https://wbs-qncdn.wisecrm.cn/uploader/20190727/88417740827431550.zip?attname=tomcat18080
+wget https://wbs-qncdn.wisecrm.cn/uploader/20190727/88417740827431550.zip?attname=tomcat18080.zip
 ```
 2. 解压即可使用
 ```
