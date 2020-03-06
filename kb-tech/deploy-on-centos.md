@@ -14,12 +14,15 @@
 ### 安装操作系统
 安装步骤略。
 
-操作系统建议安装最新的 CentOS 7.x 64 位版本，系统安装完毕后立即执行一次补丁更新。`yum update`
+操作系统建议安装最新的 CentOS 7.x 64 位版本，系统安装完毕后立即执行一次补丁更新。
+```
+yum update
+```
 
 ### 安装 MySQL
 MySQL 使用 5.6 版本，可直接通过 yum 源安装。
 
-1. 下载 yum 源文件将其放置在 `/etc/yum.repos.d/` 目录
+1. 下载 yum 源文件
 ```
 wget /etc/yum.repos.d/ https://wbs-qncdn.wisecrm.cn/uploader/20190727/88412717075896161.repo?attname=mysql-community.repo
 ```
@@ -38,6 +41,10 @@ $ use mysql;
 $ delete from user where host <> '127.0.0.1';
 $ update user set host = '%';
 $ flush privileges;
+```
+5. 替换 `utf8_5624_1` 编码文件（注意此文件针对 MySQL5.6 版本，其他版本勿用）
+```
+wget /usr/share/mysql/charsets/ https://wbs-qncdn.wisecrm.cn/uploader/20200306/4038951694243258.xml?attname=Index.xml
 ```
 
 ### 安装 SSDB
@@ -90,16 +97,15 @@ $TOMCAT$/bin/startup.sh
 ```
 
 ### 自动备份
-自动备份是通过 py 脚本配合 cron 任务来实现的。
-1. 下载 py 备份脚本
+自动备份是通过 python 脚本配合 cron 任务来实现，需服务器安装 python 程序（CentOS 自带），可以执行 `python -V` 查看是否已安装。
+1. 下载 python 备份脚本
 ```
 wget https://wbs-qncdn.wisecrm.cn/uploader/20190727/88418877353254072.py?attname=backupdb.py
 ```
-2. 下载后注意修改 `backupdb.py` 文件内的 `DB_USER` `DB_PASSWD` 参数，即 MySQL 用户名、密码，以及备份存在目录 `BACKUP_DIR`
+2. 下载后注意修改 `backupdb.py` 文件内的 `DB_USER` 和 `DB_PASSWD` 参数，即 MySQL 用户名、密码，以及备份存在目录 `BACKUP_DIR`
 3. 设置 cron 定时备份，在 `/etc/crontab` 文件添加一行（请注意 py 脚本文件位置改成自己的）
 ```
 echo "0 4 * * * root (python /data/mysql_backups/backupdb.py)" >> /etc/crontab
-
 ```
 4. 也可以手动执行备份
 ```
