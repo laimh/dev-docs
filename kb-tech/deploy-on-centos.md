@@ -42,10 +42,11 @@ $ delete from user where host <> '127.0.0.1';
 $ update user set host = '%';
 $ flush privileges;
 ```
-5. 替换 `utf8_5624_1` 编码文件（注意此文件针对 MySQL5.6 版本，其他版本勿用）
+5. 替换 `utf8_5624_1` 编码文件（注意此文件针对 MySQL5.6 版本，其他版本勿用）。替换后重启 MySQL `service mysqld restart`
 ```
 wget /usr/share/mysql/charsets/ https://wbs-qncdn.wisecrm.cn/uploader/20200306/4038951694243258.xml?attname=Index.xml
 ```
+
 
 ### 安装 SSDB
 SSDB 使用最新版本，需要通过编译安装。
