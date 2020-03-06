@@ -24,7 +24,7 @@ MySQL 使用 5.6 版本，可直接通过 yum 源安装。
 
 1. 下载 yum 源文件
 ```
-wget /etc/yum.repos.d/ https://wbs-qncdn.wisecrm.cn/uploader/20190727/88412717075896161.repo?attname=mysql-community.repo
+wget -P /etc/yum.repos.d/ https://wbs-qncdn.wisecrm.cn/uploader/20191227/101629694753510368.repo?attname=mysql-community.repo
 ```
 2. 安装
 ```
@@ -49,6 +49,7 @@ wget /usr/share/mysql/charsets/ https://wbs-qncdn.wisecrm.cn/uploader/20200306/4
 
 ### 安装 SSDB
 SSDB 使用最新版本，需要通过编译安装。
+亦可参考官网安装教程：http://ssdb.io/docs/zh_cn/install.html
 
 1. 下载并解压
 ```
@@ -58,7 +59,7 @@ cd ssdb-master
 ```
 2. 编译安装
 ```
-yum -y install autoconf gcc
+yum -y install autoconf automake gcc gcc-c++ libtool
 make 
 ```
 3. 启动
@@ -81,12 +82,14 @@ rpm -ivh jdk-8u201-linux-x64.rpm
 Tomcat 使用 8.5 版本，直接解压使用（提供的 Tomcat 已做优化，端口为 `18080`）。
 1. 下载安装文件
 ```
-wget https://wbs-qncdn.wisecrm.cn/uploader/20190727/88417740827431550.zip?attname=tomcat18080
+wget https://wbs-qncdn.wisecrm.cn/uploader/20190727/88417740827431550.zip?attname=tomcat18080.zip
 ```
 2. 解压即可使用
 ```
+# yum -y install zip unzip
 unzip tomcat18080.zip 
 ```
+
 
 ### 部署 WiseCRM365
 1. 进入 WiseCRM365 发行列表选择需要的版本下载，或联系研发索取
