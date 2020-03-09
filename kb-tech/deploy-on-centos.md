@@ -45,20 +45,20 @@ $ flush privileges;
 
 5. 调整 MySQL 参数。调整后重启 MySQL `service mysqld restart`
 
-5.1. 替换 `utf8_5624_1` 编码文件（注意此文件针对 MySQL5.6 版本，其他版本勿用）
-```
-wget /usr/share/mysql/charsets/ https://wbs-qncdn.wisecrm.cn/uploader/20200306/4038951694243258.xml?attname=Index.xml
-```
-5.2. 添加忽略表名大小写参数到 my.cnf
-* 打开编辑
-```
-vim /etc/my.cnf
-```
+  5.1. 替换 `utf8_5624_1` 编码文件（注意此文件针对 MySQL5.6 版本，其他版本勿用）
+  ```
+  wget /usr/share/mysql/charsets/ https://wbs-qncdn.wisecrm.cn/uploader/20200306/4038951694243258.xml?attname=Index.xml
+  ```
+  5.2. 添加忽略表名大小写参数到 my.cnf
+    * 打开编辑
+    ```
+    vim /etc/my.cnf
+    ```
 
-* 然后添加以下行到 [mysqld] 下面
-```
-lower_case_table_names = 1
-```
+    * 然后添加以下行到 [mysqld] 下面
+    ```
+    lower_case_table_names = 1
+    ```
 
 ### 安装 SSDB
 SSDB 使用最新版本，需要通过编译安装。
