@@ -16,6 +16,11 @@
   - `hotfix-#` BUG 热修复，与 `bugfix` 的差别是此分支会 PR 到 `master` 分支，并会尽快线上更新
   - 以上 `#` 部分为 JIRA 问题号，无问题号的则为问题简述
   - 开发分支由开发人员自行创建，完成后 PR 到主分支（可根据需要 PR 至多个分支）
+- 定制开发分支
+  - 定制开发放在 `customized/` 分支目录下（如 https://github.com/WiseCRM/365web/tree/customized/4.7.0-tuoliduo）
+  - 命名方式为 `customized/x.y-brand`，如 `customized/4.7-tubaobao`
+  - 此类分支暂永久保留不要删除，以便再开发或 bugfix
+
 
 ## PR 规范
 
@@ -31,7 +36,7 @@
 - _公版发布_ 版本命名方式为 `vX.Y.Z`，如 `v4.8.1`
 - _定制发布_ 版本命名方式为 `vX.Y.Z-n`，如 `v4.8.1-tuoliduo`
 - 发布版修订流程
-  - 切换分支至需要修订的 tag 上（detached HEAD）
+  - 切换分支至需要修订的 tag 上（detached HEAD）（GitHub Desktop 不支持切换 tag，需要使用命令或使用 SourceTree）
   - 基于此 tag 创建一个开发分支，并在其上进行修订工作
   - 完成修订后，重新发布一个修订分支（原 tag 不动）
 - 如果针对已发布的版本进行修订，版本号最后一位递增，如 `v4.8.2`
