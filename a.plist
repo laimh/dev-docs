@@ -12,7 +12,7 @@
             <key>kind</key>
             <string>software-package</string>
             <key>url</key>
-            <string>https://wbs-qncdn.wisecrm.cn/crcs/appstore/1589032898174_wiseCloudCrm.ipa</string>
+            <string>https://raw.githubusercontent.com/WiseCRM/dev-docs/master/1589032898174_wiseCloudCrm.ipa</string>
           </dict>
         </array>
         <key>metadata</key>
