@@ -24,7 +24,7 @@ MySQL 使用 5.6 版本，可直接通过 yum 源安装。
 
 1. 下载 yum 源文件
 ```
-wget -P /etc/yum.repos.d/ https://wbs-qncdn.wisecrm.cn/uploader/20191227/101629694753510368.repo?attname=mysql-community.repo
+wget -O /etc/yum.repos.d/mysql-community.repo https://wbs-qncdn.wisecrm.cn/uploader/20191227/101629694753510368.repo
 ```
 2. 安装
 ```
@@ -47,7 +47,7 @@ $ flush privileges;
 
   5.1. 替换 `utf8_5624_1` 编码文件（注意此文件针对 MySQL5.6 版本，其他版本勿用）
   ```
-  wget /usr/share/mysql/charsets/ https://wbs-qncdn.wisecrm.cn/uploader/20200306/4038951694243258.xml?attname=Index.xml
+  wget -O /usr/share/mysql/charsets/Index.xml https://wbs-qncdn.wisecrm.cn/uploader/20200306/4038951694243258.xml
   ```
   
   5.2. 添加忽略表名大小写参数到 my.cnf
@@ -82,7 +82,7 @@ make
 JDK 使用 1.8 或以上版本，通过 rpm 安装。
 1. 下载安装文件
 ```
-wget https://wbs-qncdn.qidapp.cn/uploader/20190727/jdk-8u201-linux-x64.rpm?attname=jdk-8u201-linux-x64.rpm
+wget -O jdk-8u201-linux-x64.rpm https://wbs-qncdn.qidapp.cn/uploader/20190727/jdk-8u201-linux-x64.rpm
 ```
 2. 安装
 ```
@@ -93,7 +93,7 @@ rpm -ivh jdk-8u201-linux-x64.rpm
 Tomcat 使用 8.5 版本，直接解压使用（提供的 Tomcat 已做优化，端口为 `18080`）。
 1. 下载安装文件
 ```
-wget https://wbs-qncdn.wisecrm.cn/uploader/20190727/88417740827431550.zip?attname=tomcat18080.zip
+wget -O ./tomcat18080.zip https://wbs-qncdn.wisecrm.cn/uploader/20190727/88417740827431550.zip
 ```
 2. 解压即可使用
 ```
@@ -114,10 +114,10 @@ $TOMCAT$/bin/startup.sh
 自动备份是通过 python 脚本配合 cron 任务来实现，需服务器安装 python 程序（CentOS 自带），可以执行 `python -V` 查看是否已安装。
 1. 下载 python 备份脚本
 ```
-wget https://wbs-qncdn.wisecrm.cn/uploader/20190727/88418877353254072.py?attname=backupdb.py
+wget -O ./backupdb.py https://wbs-qncdn.wisecrm.cn/uploader/20190727/88418877353254072.py
 ```
 2. 下载后注意修改 `backupdb.py` 文件内的 `DB_USER` 和 `DB_PASSWD` 参数，即 MySQL 用户名、密码，以及备份存在目录 `BACKUP_DIR`
-3. 设置 cron 定时备份，在 `/etc/crontab` 文件添加一行（请注意 py 脚本文件位置改成自己的）
+3. 设置 cron 定时备份，在 `/etc/crontab` 文件添加一行（请注意 py 脚本文件位置改成实际的）
 ```
 echo "0 4 * * * root (python /data/mysql_backups/backupdb.py)" >> /etc/crontab
 ```
