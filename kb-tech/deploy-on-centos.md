@@ -16,7 +16,7 @@
 
 操作系统建议安装最新的 CentOS 7.x 64 位版本，系统安装完毕后立即执行一次补丁更新。
 ```
-yum update
+yum update -y
 ```
 
 ### 安装 MySQL
