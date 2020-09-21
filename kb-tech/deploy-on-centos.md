@@ -10,7 +10,7 @@
   * [Tomcat](#安装-tomcat)
 * [部署](#部署-wisecrm365)
 * [自动备份](#自动备份)
-* [启用 HTTPS 访问](启用-HTTPS-访问)
+* [启用 HTTPS 访问](#启用-HTTPS-访问)
   
 ### 安装操作系统
 安装步骤略。
@@ -133,7 +133,7 @@ python /data/mysql_backups/backupdb.py
 
 HTTPS 可以提供加密数据传输通道，数据传输过程更安全，有效防止泄露与篡改。启用 HTTPS 需要 `nginx` 的支持。
 
-> 在 Windows 版本中提供的 `wisecrm365-dock` 同样提供了 HTTPS 的支持，详情参见 `$DOCK/nginx/conf/nginx.conf`
+> 在 Windows 版本中提供的 `wisecrm365-dock` 同样提供了 HTTPS 的支持，可参见 `$DOCK/nginx/conf/nginx.conf`
 
 1. 安装 nginx
 ```
