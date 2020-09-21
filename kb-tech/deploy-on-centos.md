@@ -1,5 +1,5 @@
 # CentOS 部署指南
-本文以 CentOS 7.x 版本为例，6.x 版本亦可作为参考。
+本文基于 CentOS 7.x 版本为例，6.x 8.x 或其他版本可能稍有区别。
 
 ## 目录
 * [安装操作系统](#安装操作系统)
@@ -10,6 +10,7 @@
   * [Tomcat](#安装-tomcat)
 * [部署](#部署-wisecrm365)
 * [自动备份](#自动备份)
+* [启用 HTTPS 访问](启用-HTTPS-访问)
   
 ### 安装操作系统
 安装步骤略。
@@ -110,6 +111,7 @@ unzip tomcat18080.zip
 $TOMCAT$/bin/startup.sh
 ```
 
+
 ### 自动备份
 自动备份是通过 python 脚本配合 cron 任务来实现，需服务器安装 python 程序（CentOS 自带），可以执行 `python -V` 查看是否已安装。
 1. 下载 python 备份脚本
@@ -124,4 +126,52 @@ echo "0 4 * * * root (python /data/mysql_backups/backupdb.py)" >> /etc/crontab
 4. 也可以手动执行备份
 ```
 python /data/mysql_backups/backupdb.py
+```
+
+
+### 启用 HTTPS 访问
+
+HTTPS 可以提供加密数据传输通道，数据传输过程更安全，有效防止泄露与篡改。启用 HTTPS 需要 `nginx` 的支持。
+
+> 在 Windows 版本中提供的 `wisecrm365-dock` 同样提供了 HTTPS 的支持，详情参见 `$DOCK/nginx/conf/nginx.conf`
+
+1. 安装 nginx
+```
+rpm -Uvh http://nginx.org/packages/centos/7/noarch/RPMS/nginx-release-centos-7-0.el7.ngx.noarch.rpm
+```
+```
+yum install -y nginx
+```
+
+2. 使用默认配置文件
+Nginx 配置文件默认安装在 `/etc/nginx/nginx.conf`。为简化操作，可直接使用我们提供的配置好的配置文件进行覆盖。
+```
+wget -O /etc/nginx/nginx.conf https://wbs-qncdn.wisecrm.cn/uploader/20200921/21230069707758771.conf
+```
+
+3. 安装证书并修改域名
+将 SSL 证书放在 nginx.conf 同目录下，证书名称默认要求为 `crmssl.cre` 和 `crmssl.key`，如名称不匹配可自行修改。然后，打开 nginx.conf 文件修改访问域名。
+```
+vim /etc/nginx/nginx.conf
+
+...
+server_name           127.0.0.1;
+...
+```
+将 `127.0.0.1` 修改为客户的域名即可。
+
+4. 启动
+上述步骤完成后，即完成了所有配置。以下提供常用 nginx 命令供参考。
+```
+# 启动
+nginx
+
+# 测试配置文件正确性
+nginx -t
+
+# 重新加载配置文件使之生效
+nginx -s reload
+
+# 停止
+nginx -s stop
 ```
