@@ -17,3 +17,5 @@
 ## MD 基本语法参考
 
 [https://www.jianshu.com/p/191d1e21f7ed/](https://www.jianshu.com/p/191d1e21f7ed/)
+
+> 本文档可支持打包成单一文件，如 WORD PDF 等，具体请联系研发
