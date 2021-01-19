@@ -8,9 +8,10 @@
 
 1. 登录钉钉平台 https://www.dingtalk.com/
 
-2. 进入工作台，创建自建应用
-   ![](<https://wbs-qncdn.wisecrm.cn/uploader/20210119/31608664732163220.jpg>)
+2. 进入工作台，创建自建应用[//]: # (<https://raw.githubusercontent.com/WiseCRM/dev-docs/master/kb-tech/dingtalk/dingtalk1.jpg)
 
+   ![](<https://wbs-qncdn.wisecrm.cn/uploader/20210119/31608664732163220.jpg>)
+   
 3. 点击应用开发，选择H5微应用，创建应用
    ![](<https://raw.githubusercontent.com/WiseCRM/dev-docs/master/kb-tech/dingtalk/dingtalk2.jpg>)
 
