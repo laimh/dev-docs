@@ -9,26 +9,47 @@
 1. 登录钉钉平台 https://www.dingtalk.com/
 
 2. 进入工作台，创建自建应用
-   ![](<https://wbs-qncdn.wisecrm.cn/uploader/20210119/31608664732163220.jpg>)
+    <!-- https://raw.githubusercontent.com/WiseCRM/dev-docs/master/kb-tech/dingtalk/dingtalk1.jpg -->
+    <a target="_blank" rel="noopener noreferrer" href="https://wbs-qncdn.wisecrm.cn/uploader/20210119/31608664732163220.jpg">
+        <img src="https://wbs-qncdn.wisecrm.cn/uploader/20210119/31608664732163220.jpg" alt="" data-canonical-src="https://wbs-qncdn.wisecrm.cn/uploader/20210119/31610314674078270.jpg" style="max-width:100%;">
+    </a>
    
 3. 点击应用开发，选择H5微应用，创建应用
-   ![](<https://wbs-qncdn.wisecrm.cn/uploader/20210119/31610297644098303.jpg>)
+    <!-- https://raw.githubusercontent.com/WiseCRM/dev-docs/master/kb-tech/dingtalk/dingtalk2.jpg -->
+    <a target="_blank" rel="noopener noreferrer" href="https://wbs-qncdn.wisecrm.cn/uploader/20210119/31610297644098303.jpg">
+        <img src="https://wbs-qncdn.wisecrm.cn/uploader/20210119/31610297644098303.jpg" alt="" data-canonical-src="https://wbs-qncdn.wisecrm.cn/uploader/20210119/31610297644098303.jpg" style="max-width:100%;">
+    </a>
 
 4. 点击对应的应用，选择开发管理，地址由CRM服务地址与组织id组成,注：图中organizationId为CRM的APPID,可登录CRM系统后台版本信息处查看
-   ![](<https://wbs-qncdn.wisecrm.cn/uploader/20210119/31610314674078270.jpg>)
+   <!-- https://raw.githubusercontent.com/WiseCRM/dev-docs/master/kb-tech/dingtalk/dingtalk3.jpg -->
+   <a target="_blank" rel="noopener noreferrer" href="https://wbs-qncdn.wisecrm.cn/uploader/20210119/31610314674078270.jpg">
+       <img src="https://wbs-qncdn.wisecrm.cn/uploader/20210119/31610314674078270.jpg" data-canonical-src="https://wbs-qncdn.wisecrm.cn/uploader/20210119/31610314674078270.jpg" style="max-width:100%;">
+   </a>
 
 5. 选择权限管理，添加权限接口，增加待办任务及消息通知，开启后可接收CRM消息推送提醒
-   ![](<https://wbs-qncdn.wisecrm.cn/uploader/20210119/31610331546725930.jpg>)
+   <!-- https://raw.githubusercontent.com/WiseCRM/dev-docs/master/kb-tech/dingtalk/dingtalk4.jpg -->
+   <a target="_blank" rel="noopener noreferrer" href="https://wbs-qncdn.wisecrm.cn/uploader/20210119/31610331546725930.jpg">
+       <img src="https://wbs-qncdn.wisecrm.cn/uploader/20210119/31610331546725930.jpg" data-canonical-src="https://wbs-qncdn.wisecrm.cn/uploader/20210119/31610331546725930.jpg" style="max-width:100%;">
+   </a>
    
 ## 3. CRM参数配置
 
 1. 登录CRM后台设置钉钉所需配置，如图
-   ![](<https://wbs-qncdn.wisecrm.cn/uploader/20210119/31610342404919283.jpg>)
+   <!-- https://raw.githubusercontent.com/WiseCRM/dev-docs/master/kb-tech/dingtalk/dingtalk5.jpg -->
+   <a target="_blank" rel="noopener noreferrer" href="https://wbs-qncdn.wisecrm.cn/uploader/20210119/31610342404919283.jpg">
+       <img src="https://wbs-qncdn.wisecrm.cn/uploader/20210119/31610342404919283.jpg" data-canonical-src="https://wbs-qncdn.wisecrm.cn/uploader/20210119/31610342404919283.jpg" style="max-width:100%;">
+   </a>
 
 2. 对应创建应用上，选择凭证与基础信息，AgentId，AppKey，AppSecret填入CRM
-   ![](<https://wbs-qncdn.wisecrm.cn/uploader/20210119/31610360535117967.jpg>)
+   <!-- https://raw.githubusercontent.com/WiseCRM/dev-docs/master/kb-tech/dingtalk/dingtalk6.jpg -->
+   <a target="_blank" rel="noopener noreferrer" href="https://wbs-qncdn.wisecrm.cn/uploader/20210119/31610360535117967.jpg">
+       <img src="https://wbs-qncdn.wisecrm.cn/uploader/20210119/31610360535117967.jpg" data-canonical-src="https://wbs-qncdn.wisecrm.cn/uploader/20210119/31610360535117967.jpg" style="max-width:100%;">
+   </a>
 
 3. 钉钉开放平台点击首页，可以查看CorpId，填入CRM
-   ![](<https://wbs-qncdn.wisecrm.cn/uploader/20210119/31610369470112472.jpg>)
+   <!-- https://raw.githubusercontent.com/WiseCRM/dev-docs/master/kb-tech/dingtalk/dingtalk7.jpg -->
+   <a target="_blank" rel="noopener noreferrer" href="https://wbs-qncdn.wisecrm.cn/uploader/20210119/31610369470112472.jpg">
+       <img src="https://wbs-qncdn.wisecrm.cn/uploader/20210119/31610369470112472.jpg" data-canonical-src="https://wbs-qncdn.wisecrm.cn/uploader/20210119/31610369470112472.jpg" style="max-width:100%;">
+   </a>
    
 4. 填写CRM服务地址，开始使用吧
