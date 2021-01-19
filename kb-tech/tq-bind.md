@@ -12,7 +12,7 @@
 1. 打开设置-->API接口设置-->系统对接说明-->对接参数说明
 ![](<https://wbs-qncdn.wisecrm.cn/uploader/20210119/31610408505976393.jpg>)
 
-#### 在CRM设置TQ参数
+### 在CRM设置TQ参数
 
 1. 系统设置-->通讯设置-->TQ设置（显示快捷键ctrl+alt+shift），注意username是TQ的管理员账号和密码
 ![](<https://wbs-qncdn.wisecrm.cn/uploader/20210119/31610416378334041.jpg>)
