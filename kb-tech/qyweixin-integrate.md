@@ -14,7 +14,7 @@
 3. 创建完成后，需设置如图以下功能
    ![](<https://wbs-qncdn.wisecrm.cn/uploader/20210203/32915531100507629.jpg>)
 
-4. 设置工作台应用主页，地址(必须为域名)由CRM服务地址与组织id组成,(例：https://365.wisecrm.com/weixin/oauth?organizationId=xxx)
+4. 设置工作台应用主页，地址(必须为域名)由CRM服务地址与组织id组成,(例：https://365.wisecrm.com/qyweixin/start?organizationId=xxx)
     注：organizationId为CRM的APPID,可登录CRM系统后台版本信息处查看
 
 5. 设置自定义菜单栏，同设置工作台应用主页地址一致，也可设置多个菜单调整到其它地址
